@@ -1,8 +1,17 @@
-*{
+* {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing:border-box;
+    margin:0;
 }
+
+.main-content{
+    margin-top:0;
+    padding-top:0;
+}
+
 .entire-header .wrapper{
+    margin-top:0;
+    padding-top:1%;
     background-color:#1f2937;
     display:flex;
     height:40px;
@@ -16,25 +25,29 @@
     padding-left:1.3em;
     text-decoration:none;
     color:white;
-    font-size:0.6em;
+    font-size:0.8em;
 }
 .header-links a:hover{
     color:rgb(242, 193, 103);
+    text-shadow:0px 0px 3px rgba(255, 252, 89,40%);
     cursor:pointer;
 }
 .header-logo{
     font-weight:750;
+    font-size:1.2em;
+    padding-left:1em;
 }
 .header-logo:hover{
     color:rgb(224, 224, 224);
 }
 
 .container1 {
-    padding:3em;
-    gap:5rem;
+    padding:3rem;
     background-color:#1f2937;
     display:flex;
+    flex-wrap:wrap;
     justify-content: space-around;
+    vertical-align: center;
 }
 /*THIS IS ALL THE LEFT CONTAINER (WITHIN CONTAINER 1*/
 /*-----------------------------------------------*/
@@ -55,7 +68,7 @@
 .c1-left p{
     margin-top:0;
     padding-left:3.9em;
-    padding-right:;
+    margin-right:3em;
     font-size:0.7em;
     color:white;
 }
@@ -74,12 +87,13 @@
     padding-left:1.2em;
     padding-right:1.2em;
     transition:0.3s;
-    margin-left:3.8em;
+    margin-left:3.3em;
+    margin-top:3%;
 }
 
 .c1-left button:hover{
-    color:rgb(241, 235, 235);
-    background-color: #4789f2;
+    background-color:white;
+    color:#3882f6;
     transition:0.3s;
     box-shadow:1px 1px 4px 1px rgba(188, 183, 183,50%);
     cursor:pointer;
@@ -91,11 +105,14 @@
 .c1-right {
     flex:1;
     padding:3em;
+    background-color:#1f2937;
 }
 
 .c1-right img {
+    margin-top:1em;
     height:auto;
-    width:100%;
+    max-width:100%;
+    min-width:50%;
     border-radius:2em;
     transition:0.2s;
     
@@ -105,8 +122,173 @@
     box-shadow:2px 2px 10px 1px rgba(188, 183, 183,50%);
     transition:0.3s;
 }
+/*-----------------------------------------------*/
+/* these are the 4 blue squares section */
+/*-----------------------------------------------*/
+
+.c2-header{
+    text-align:center;
+    font-size:2em;
+    margin-bottom:1.5em;
+    margin-top:2%;
+}
+/*-----------------------------------------------*/
+/* container 2 is housing the divs containing ( squares + the text below the squares) */
+.container2{
+    box-sizing:border-box;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-left:10%;
+    margin-right:10%;
+    background-color:white;
+    margin-bottom:2%;
+}
+
+.c2-sq {
+    margin:1em;
+    text-align:center;
+}
+
+.square{
+    margin:auto;
+    height:6rem;
+    width:6rem;
+    border: 3px solid #3882f6;
+    border-radius:1em;
+}
+
+.c2-sq p{
+    margin-top:5%;
+    color:gray;
+    font-size:0.6em;
+    padding-left:10%;
+    padding-right:10%;
+    max-width:8rem;
+}
+
+/*---------------------------*/
+/*-----------------------------------------------*/
+/*This is the third section/container 3, which holds the Thor quote*/
+/*-----------------------------------------------*/
+/*---------------------------*/
+
+.container3 {
+    margin:0;
+    background-color:rgb(204, 206, 211);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-left:20%;
+    padding-right:20%;
+    height:15em;
+    color:rgb(77, 75, 75);
+}
+
+.c3-wrapper{
+   margin-top:5%;
+   margin-bottom:5%;
+}
+
+.thor-quote{
+    font-size:1.3em;
+    margin-bottom:1%;
+    padding-left:5%;
+    padding-right:5%;
+    line-height:1.5em;
+    font-style:italic;
+    font-weight:250;
+}
+.thor-cite{
+    text-align:right;
+    padding-right:5%;
+    font-weight:700;
+}
+
+/*---------------------------*/
+/*-----------------------------------------------*/
+/*This is container/section4 with the call to action*/
+/*another sign up button here*/
+/*-----------------------------------------------*/
+/*---------------------------*/
+
+.container4{
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left:15%;
+    padding-right:15%;
+}
+
+.inner_c4{
+    height:5em;
+    border-radius:15px;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:6%;
+    padding-bottom:6%;
+    background-color:#3882f6;
+    color:white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 
+.inner-text{
+    flex:1;
+    font-size:0.8em;
+}
 
+.c4p1 {
+    font-weight:500;
+}
 
+.c4p2{
+    margin-top:1%;
+    font-weight:200;
+    max-width:80%;
+}
 
+.sign-up {
+    color:white;
+    background-color:#3882f6;
+    border:1px solid white;
+    height:2.5em;
+    padding-left:1.3em;
+    padding-right:1.3em;
+    border-radius:0.5em;
+    font-size:0.6em;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.sign-up:hover{
+    cursor:pointer;
+    background-color:white;
+    color:#3882f6;
+    transition:0.3s;
+    box-shadow: 0px 0px 1px 1px rgb(237, 236, 236);
+}
+
+/*---------------------------*/
+/*---------------------------*/
+/*This is the footer section */
+/*---------------------------*/
+/*---------------------------*/
+
+footer{
+    background-color:#1f2937;
+}
+.inner-footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+.inner-footer p{
+    padding:0.3em;
+    font-size:0.8em;
+    color:white;
+    font-weight:200;
+}
